@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+        <link rel="stylesheet" href="./normalize.css">
+        <link rel="stylesheet" href="./style.css">
+        <title>Library</title>
+    </head>
+    <body>
+        <header>
+        </header>
+        <main>
+            <div class="input">
+                <h1>
+                    BOOKSHELF
+                </h1>
+                <div class="form">
+                    <label for ="title">
+                        <p class=inputlabel>Title</p>
+                        <input id="title" type="text" placeholder="Book Title" name="title"></input>
+                    </label>
+                    <label for ="author">
+                        <p class=inputlabel>Author</p>
+                        <input id="author" type="text" placeholder="Author" name="author"></input>
+                    </label>
+                    <label for ="pages">
+                        <p class=inputlabel>Pages</p>
+                        <input id="pages" type="number" placeholder="123" name="pages"></input>
+                    </label>
+                    <label for="read" class="checkbox">
+                        <p class=inputlabel>Read?</p>
+                        <input id="read" type="checkbox" name="read">
+                    </label>
+                    <input type="button" value="Add book" id="addBook">
+                </div>
+            </div>
+            <div class="list">
+            </div>
+        </main>
+    </body>
+    <script src="library.js"></script>
+</html>
