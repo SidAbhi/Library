@@ -28,7 +28,13 @@ function listen() {
 };
 
 function display() {
-    library = JSON.parse(localStorage.getItem('savedLib'));
+    if (localStorage.getItem('savedLib') === null) {
+        console.log("Empty")
+        library = [];
+    } else {
+        console.log("not empty")
+        library = JSON.parse(localStorage.getItem('savedLib'));
+    }
     list.innerHTML = '';
     for(i=0; i<library.length; i++) {
         dispLib(i);
